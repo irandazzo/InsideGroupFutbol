@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------ GRILLA --------------*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    background-color: grey;
+}
+
+/* ----------- HEADER  ----------- */
+.menuNavegacion{
+    display: flex;
+    justify-content: center;
+    background-color: grey
+}
+.menuNavegacion li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+.menuNavegacion ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+.logoGral{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+    padding: 15px;
+}
+.fa-whatsapp{
+    color: white;
+    font-size: 30px;
+}
+.fa-facebook{
+    color: white;
+    font-size: 30px;
+}
+.fa-instagram{
+    color: white;
+    font-size: 30px;
+}
+.socialMedia{
+    padding: 5px;
+}
