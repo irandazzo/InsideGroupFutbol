@@ -93,7 +93,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
-/* ---- GRILLA MAIN QUIENES SOMOS ----*/
+/* ---- PAGINA MAIN QUIENES SOMOS ----*/
   .sectionGrid{
     display: grid;
     grid-template-columns: repeat(2fr*2);
@@ -225,7 +225,7 @@
     color: #9c969c;
     margin: 20px;
   }
-/* ---- GRILLA QUIENES SOMOS RD -----*/
+/* ---- PAGINA QUIENES SOMOS RD MOBILE -----*/
 @media screen and (max-width: 480px){ 
 .sectionGrid{
   display: grid;
@@ -333,13 +333,13 @@
   "punto1 punto2 punto3 punto4";
   width: 100%;
 }
-/* ------- PAGINA SERVICIOS RD --------*/
+/* ------- PAGINA SERVICIOS RD MOBILE --------*/
 @media screen and (max-width: 480px){
   .serviciosGrid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(0.4fr*4);
-    grid-gap: 0px;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-gap: 20px;
     grid-auto-flow: row;
     grid-template-areas: 
     "ideaServicios"
@@ -349,7 +349,242 @@
     "punto4";
     width: 100%;
   }
+  .ideaServicios{
+    grid-area: ideaServicios;
+  }
+  .punto1{
+    grid-area: punto1;
+  }
+  .punto2{
+    grid-area: punto2;
+  }
+  .punto3{
+    grid-area: punto3;
+  }
+  .punto4{
+    grid-area: punto4;
+  }
+}
+/* ------- PAGINA CONTACTO ---------*/
+.tituloContacto{
+  display: flex;
+  justify-content: left;
+  letter-spacing: 15px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.contact_form{	
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 460px; 
+  border-radius: 10px;  
+	padding-top: 10px;
+	padding-bottom: 20px;  
+  margin-left: 50px;
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+.colocar_nombre{
+  color: #9c969c;
+}
+.colocar_email{
+  color: #9c969c;
+}
+.colocar_telefono{
+  color: #9c969c;
+}
+.colocar_asunto{
+  color: #9c969c;
+}
+.colocar_mensaje{
+  color: #9c969c;
+}
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 30px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:#9c969c; 
+	margin-top: 5px;  
+	padding-left: 10px;
+  margin-bottom: 5px; 
+}
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:#9c969c; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+label{
+  display: block; 
+	float: center; 	
+}
+.btn-mensaje{
+	height: 40px; 
+	width: 420px;
+	text-transform: uppercase;
+	background-color:#9c969c ; 
+	border-color:#9c969c; 
+	border-style: solid; 
+	border-radius: 10px;	  
+  cursor: pointer;
+  justify-content: center;
+}
+.btn-mensaje p{
+	font-size: 15px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 5px;
+}
+span{
+	color:#9c969c; 
+}
+.aviso{
+	font-size: 13px;  
+	color: #9c969c;  
+}
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+.formulario input:focus{
+	outline:0;
+	border: 1px solid black;
+}
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid black;
+}
+.socialContacto a{
+  color: #282d32;
+  font-size: 50px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contactoOficina p{
+  
+  color: #9c969c;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  margin: 10px;
+}
+.contactoOficina a{
+  font-size: 50px;
+  color: #9c969c;
+  padding: 10px;
+}
+/* ------- PAGINA CONTACTO RD MOBILE ------*/
+@media screen and (max-width: 480px){
+.mainContacto{
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 0.4fr 0.4fr;
+  grid-gap: 20px;
+  grid-auto-rows: row;
+  grid-template-areas:
+  "contactoOficina"
+  "formulario";
+  width: 90%;
+}
+.contactoOficina{
+    grid-area: contactoOficina;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact_form{
+    grid-area: formulario;
+  }
+  .formularioContacto{
+    display: flex;
+    justify-content: center;
+  }
+  .contact_form{
+    display: flex;
+    justify-content: center;
+    width: 100%
+  }
+  input{
+    width: 350px;
+    margin: auto;
+  }
+  textarea{
+    width: 350px;
+    margin: auto;
+  }
+  label{
+    margin-left: 25px;
+    margin: auto;
+  }
+  .btn-mensaje{
+    width: 350px;
+    margin: auto;
+  }
+  .aviso{
+    margin:auto;
+    padding-top: 15px;
+  }
 } 
+
+/* ------ PAGINA NUESTROS JUGADORES -----*/
+.tituloNuestrosJugadores{
+  display: flex;
+  justify-content: left;
+  letter-spacing: 15px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.jugador img{
+  border-radius: 1rem;
+}
+.profesionales{
+  color: #9c969c;
+  font-size: 40px;
+  padding: 10px;
+}
+.nombreJugador{
+  color: #9c969c;
+  font-size: 25px;
+  letter-spacing: 6px;
+}
+.posicionJugador{
+  color: #9c969c;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+#galeria img{
+  width: 100%;
+}
+#galeria img:hover{
+  border: 5px solid #f7f7f7;
+}
+#galeria .col-lg-4{
+  padding: 10px;
+}
 
 /* -------FOOTER ----------*/
 .footer-dark {

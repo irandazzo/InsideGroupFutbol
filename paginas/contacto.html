@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Contacto</title>
 
     <link rel="shortcut icon" href="../multimedia/logoinside.png" type="image/x-icon" alt="logoinside">
 
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <!-------------- HEADER SERVICIOS --------------->
+    <!----------- HEADER CONTACTO ------------>
     <header>
         <nav class="navbar navbar-expand-md navbar-light navbar-dark headerIndex">
             <div class="container-fluid headerIndex">
@@ -40,10 +40,10 @@
                             <a class="nav-link" href="../paginas/quienessomos.html">¿Quiénes Somos?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../paginas/nuestrosjugadores.html">Nuestros Jugadores</a>
+                            <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../paginas/nuestrosjugadores.html">Nuestros Jugadores</a>
                         </li>
                     </ul>
 
@@ -59,58 +59,100 @@
 
                 </div>
         </nav>
+
     </header>
 
-    <!-------- CONTENIDO SERVICIOS ----------->
+    <!----------- CONTENIDO PRINCIPAL CONTACTO ---------->
 
     <main>
-        <h1 class="tituloServicios">SERVICIOS</h1>
-        <section class="serviciosGrid">
-            <div class="ideaServicios">
-                <p>
-                    Para Inside Group Sports los valores son irrenunciables y trabajamos para una formación y crecimiento integral de nuestros 
-                    representados como personas y profesionales con especial atención y dedicación a sus necesidades personales, técnicas, 
-                    nutricionales, psicológicas y deportivas.
-                </p>
-            </div>
-            
-            <div class="punto1">
-                <div class="iconoServicios"><i class="fa-solid fa-handshake"></i></div>
-                <h2 class="subtituloServicios">Contratos de Confianza</h2>
-                <p class="detalleServicios">Basados en el respeto, lealtad y compromiso mutuo de la relación agente/jugador y agente/entrenador. 
-                    Porque creemos en las capacidades y potencialidades de nuestros jugadores y entrenadores</p>
-            </div>
-            
-            <div class="punto2">
-                <div class="iconoServicios"><i class="fa-solid fa-briefcase"></i></div>
-                <h2 class="subtituloServicios">Asesoramiento personalizado</h2>
-                <p class="detalleServicios">Acorde a la etapa evolutiva y situación deportiva y personal de los jugadores y/o entrenadores.
-                Siempre procurando el crecimiento sostenido de la carrera</p>
-            </div>
-
-            <div class="punto3">
-                <div class="iconoServicios"><i class="fa-solid fa-book-open"></i></div>
-                <h2 class="subtituloServicios">Asesoramiento jurídico</h2>
-                <p class="detalleServicios">Asistencia especializada en la celebración de contratos deportivos con clubes, 
-                    transferencias nacionales o internacionales. Contratos de cesión de derechos 
-                    de imagen y/o con marcas deportivas. 
-                    Asesoramiento financiero e impositivo</p>
+        <h1 class="tituloContacto">CONTACTO</h1>
+        <div class="row formularioContacto mainContacto">
+            <div class="col contactoOficina">
+                <div>
+                    <p>Nuestra oficina está ubicada en Av. de Mayo 749 5° Piso Oficina 33 (CABA, Argentina) y contamos
+                        con
+                        una amplia red de contactos con Clubes, Managers, Coordinadores y Entrenadores del país de todas
+                        las
+                        categorías.
+                        Asimismo contamos con contacto directo con Directores Deportivos, Scouts, Entrenadores y Agentes
+                        del
+                        extranjero que nos permiten generar contactos y proyectos en diferentes ligas del mundo.</p>
+                </div>
+                <div>
+                    <p>
+                        <a href="www.facebook.com/insidegroupfutbol"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="www.instagram.com/insidegroupfutbol"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.twitter.com/insidegroup6"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://goo.gl/maps/kzxZAHxShsR663yk7"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </p>
+                </div>
             </div>
 
-            <div class="punto4">
-                <div class="iconoServicios"><i class="fa-solid fa-building"></i></div>
-                <h2 class="subtituloServicios">Servicios para clubes</h2>
-                <p class="detalleServicios">Scouting y seguimiento de jugadores y entrenadores. Análisis de video. Asesoramiento e intermediación en transferencias nacionales e internacionales.
-                    Organización de giras deportivas y pretemporadas.
-                    Coordinación de partidos amistosos.</p>
+            <div class="col contact_form">
+                <div>
+
+                    <div class="formulario">
+
+                        <form action="submeter-formulario" method="post" class="formulario">
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                    placeholder="Escribe tu nombre">
+                            </p>
+
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                    placeholder="Escribe tu Email">
+                            </p>
+
+                            <p>
+                                <label for="telefone" class="colocar_telefono">Teléfono
+                                </label>
+                                <input type="tel" name="introducir_telefono" id="telefono"
+                                    placeholder="Escribe tu teléfono">
+                            </p>
+
+                            <p>
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                    placeholder="Escribe un asunto">
+                            </p>
+
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                    required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            </p>
+
+                            <button type="submit" name="enviar_formulario" id="enviar" class="btn-mensaje">
+                                <p>Enviar</p>
+                            </button>
+
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
             </div>
-
-        
-        </section>
-
+        </div>
     </main>
 
-    <!-- ------------- FOOTER SERVICIOS  ----------------->
+
+
+
+
+    <!-- ------------- FOOTER CONTACTO ----------------->
     <footer class="footer-dark">
         <div class="container">
             <div class="row">
@@ -119,7 +161,7 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../paginas/quienessomos.html">Quiénes Somos</a></li>
-                        <li><a href="../paginas/contacto.html">Contacto</a></li>
+                        <li><a href="../paginas/servicios.html">Servicios</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-3 item">
