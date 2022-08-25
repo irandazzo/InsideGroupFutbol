@@ -5,34 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inside Group Sports</title>
+    <title>Nuestros Jugadores</title>
 
-    <link rel="shortcut icon" href="multimedia/logoinside.png" type="image/x-icon" alt="logoinside">
+    <link rel="shortcut icon" href="../multimedia/logoinside.png" type="image/x-icon" alt="logoinside">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="estilos/bootstrap.min.css">
     <link rel="stylesheet" href="estilos/estilos.css">
 
     <script src="https://kit.fontawesome.com/0994120167.js" crossorigin="anonymous"></script>
 
-    <meta name="keywords" content="captacion, asesoramiento, representación, intermediación, fútbol">
+    <meta name="keywords" content="captacion, asesoramiento, representación, intermediación, servicios, fútbol">
     <meta name="description"
         content="Inside Group es una empresa de captación, asesoramiento, representación e intermediación de jugadores/as y entrenadores/as de fútbol.">
 </head>
 
-<body class="contenedor">
-    <!------------ HEADER INDEX ----------->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light navbar-dark headerIndex">
-            <div class="container-fluid headerIndex">
-                <button class="navbar-toggler" type="button" aria-label="hamburguesa" data-toggle="collapse"
-                    data-target="#opciones">
+<body>
+    <!--------------- HEADER INDEX ------------->
+    <header> 
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo horizontal-logo" src="multimedia/logoinside.png" width="100px"
+                        alt="logoinside">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="multimedia/logoinside.png" width="100" height="100" alt="logo">
-                </a>
-                <div class="collapse navbar-collapse" id="opciones">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -42,144 +45,153 @@
                         <li class="nav-item">
                             <a class="nav-link" href="paginas/servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="paginas/nuestrosjugadores.html">Nuestros Jugadores</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nuestros Jugadores
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="paginas/profesionales.html">Profesionales</a>
+                                <a class="dropdown-item" href="#">Juveniles</a>
+                                <a class="dropdown-item" href="#">Directores Técnicos</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="paginas/contacto.html">Contacto</a>
                         </li>
                     </ul>
-
-
                     <div class="col item socialIndex">
                         <a href="www.facebook.com/insidegroupfutbol"><i class="fa-brands fa-facebook"></i></a>
                         <a href="www.instagram.com/insidegroupfutbol"><i class="fa-brands fa-instagram"></i></a>
                         <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
                         <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-
-
-
                 </div>
+            </div>
         </nav>
-
     </header>
+        <!---------- CONTENIDO PRINCIPAL INDEX --------->
+        <main>
+            <section class="portada">
+                <div class="row row-cols-1 row-cols-md-3 g-4 fichas">
+                    <div class="col colIndex">
+                        <div class="card h-100">
+                            <img src="multimedia/jugadores/AUZQUI-FICHA03.jpg" class="card-img-top"
+                                alt="AUZQUI-FICHA03">
+                            <div class="card-body">
+                                <h5 class="card-title">Carlos Auzqui</h5>
+                                <p class="card-text">Extremo Izquierdo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col colIndex">
+                        <div class="card h-100">
+                            <img src="multimedia/jugadores/BARBOZA-FICHA02.jpg" class="card-img-top"
+                                alt="BARBOZA-FICHA02">
+                            <div class="card-body">
+                                <h5 class="card-title">Alexander Barboza</h5>
+                                <p class="card-text">Defensor Central Izquierdo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col colIndex">
+                        <div class="card h-100">
+                            <img src="multimedia/jugadores/BERNABEI-FICHA04.jpg" class="card-img-top"
+                                alt="BERNABEI-FICHA04">
+                            <div class="card-body">
+                                <h5 class="card-title">Alexandro Bernabei</h5>
+                                <p class="card-text">Lateral Izquierdo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col colIndex">
+                        <div class="card h-100">
+                            <img src="multimedia/jugadores/MORALES_BRAVO-FICHA02.jpg" class="card-img-top"
+                                alt="MORALES_BRAVO-FICHA02">
+                            <div class="card-body">
+                                <h5 class="card-title">Iván Morales Bravo</h5>
+                                <p class="card-text">Centrodelantero</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col colIndex">
+                        <div class="card h-100">
+                            <img src="multimedia/jugadores/SAND_FICHA01.jpg" class="card-img-top" alt="SAND_FICHA01">
+                            <div class="card-body">
+                                <h5 class="card-title">José Sand</h5>
+                                <p class="card-text">Centrodelantero</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col colIndex">
+                        <div class="card h-100">
+                            <img src="multimedia/jugadores/SAND_FICHA01.jpg" class="card-img-top" alt="SAND_FICHA01">
+                            <div class="card-body">
+                                <h5 class="card-title">José Sand</h5>
+                                <p class="card-text">Centrodelantero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <!---------- CONTENIDO PRINCIPAL INDEX --------->
-    <main>
-        <section class="portada">
-            <div class="row row-cols-1 row-cols-md-3 g-4 fichas">
-                <div class="col colIndex">
-                    <div class="card h-100">
-                        <img src="multimedia/jugadores/AUZQUI-FICHA03.jpg" class="card-img-top" alt="AUZQUI-FICHA03">
-                        <div class="card-body">
-                            <h5 class="card-title">Carlos Auzqui</h5>
-                            <p class="card-text">Extremo Izquierdo</p>
-                        </div>
+        <!-- ------------- FOOTER INDEX ----------------->
+        <footer class="footer-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Secciones</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="paginas/quienessomos.html">Quiénes Somos</a></li>
+                            <li><a href="paginas/servicios.html">Servicios</a></li>
+                            <li><a href="paginas/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Nuestros Jugadores</h3>
+                        <ul>
+                            <li><a href="#">Profesionales</a></li>
+                            <li><a href="#">Juveniles</a></li>
+                            <li><a href="#">Director Técnico</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>¿Dónde estamos?</h3>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-phone-flip"></i> (+54) 011-5718-4434
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-at"></i> insidegroup6@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i> Av. de Mayo 749 5° Piso Oficina 33 (CP1084)
+                                CABA,
+                                Argentina
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item social">
+                        <a href="www.facebook.com/insidegroupfutbol"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="www.instagram.com/insidegroupfutbol"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="col colIndex">
-                    <div class="card h-100">
-                        <img src="multimedia/jugadores/BARBOZA-FICHA02.jpg" class="card-img-top" alt="BARBOZA-FICHA02">
-                        <div class="card-body">
-                            <h5 class="card-title">Alexander Barboza</h5>
-                            <p class="card-text">Defensor Central Izquierdo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col colIndex">
-                    <div class="card h-100">
-                        <img src="multimedia/jugadores/BERNABEI-FICHA04.jpg" class="card-img-top"
-                            alt="BERNABEI-FICHA04">
-                        <div class="card-body">
-                            <h5 class="card-title">Alexandro Bernabei</h5>
-                            <p class="card-text">Lateral Izquierdo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col colIndex">
-                    <div class="card h-100">
-                        <img src="multimedia/jugadores/MORALES_BRAVO-FICHA02.jpg" class="card-img-top"
-                            alt="MORALES_BRAVO-FICHA02">
-                        <div class="card-body">
-                            <h5 class="card-title">Iván Morales Bravo</h5>
-                            <p class="card-text">Centrodelantero</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col colIndex">
-                    <div class="card h-100">
-                        <img src="multimedia/jugadores/SAND_FICHA01.jpg" class="card-img-top" alt="SAND_FICHA01">
-                        <div class="card-body">
-                            <h5 class="card-title">José Sand</h5>
-                            <p class="card-text">Centrodelantero</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col colIndex">
-                    <div class="card h-100">
-                        <img src="multimedia/jugadores/SAND_FICHA01.jpg" class="card-img-top" alt="SAND_FICHA01">
-                        <div class="card-body">
-                            <h5 class="card-title">José Sand</h5>
-                            <p class="card-text">Centrodelantero</p>
-                        </div>
-                    </div>
-                </div>
+
+                <p class="copyright">Inside Group Sports © 2022</p>
             </div>
-        </section>
-    </main>
+        </footer>
 
-    <!-- ------------- FOOTER INDEX ----------------->
-    <footer class="footer-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>Secciones</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="paginas/quienessomos.html">Quiénes Somos</a></li>
-                        <li><a href="paginas/servicios.html">Servicios</a></li>
-                        <li><a href="paginas/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>Nuestros Jugadores</h3>
-                    <ul>
-                        <li><a href="#">Profesionales</a></li>
-                        <li><a href="#">Juveniles</a></li>
-                        <li><a href="#">Director Técnico</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>¿Dónde estamos?</h3>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-phone-flip"></i> (+54) 011-5718-4434
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-at"></i> insidegroup6@gmail.com
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i> Av. de Mayo 749 5° Piso Oficina 33 (CP1084) CABA,
-                            Argentina
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3 item social">
-                    <a href="www.facebook.com/insidegroupfutbol"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="www.instagram.com/insidegroupfutbol"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <p class="copyright">Inside Group Sports © 2022</p>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
